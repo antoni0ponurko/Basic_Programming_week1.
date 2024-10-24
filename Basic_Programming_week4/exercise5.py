@@ -1,19 +1,10 @@
-# Create one list with the days of the week. Use the print command to print the following output in one
-# line of code:
-# - just the working days of the week
-# - just the weekend days of the week
-# - the unpaired days of the week
-# - the paired days of the week
-# Hint: what technique did we see last week to retrieve a part from a string?
-# [‘Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-# ['Saturday', 'Sunday’]
-# ['Monday', 'Wednesday', 'Friday', 'Sunday']
-# ['Tuesday', 'Thursday', 'Saturday']
+days_of_week = ['Monday', 'Tuesday', 'Wednesday',
+                'Thursday', 'Friday', 'Saturday', 'Sunday']
 
-days = ["Monday", "Tuesday", "Wednesday",
-        "Thursday", "Friday", "Saturday", "Sunday"]
+print("Working days:", days_of_week[:5])
 
-print(days[:5])
-print(days[-2:])
-print(days[0:7:2])
-print(days[1:7:2])
+print("Weekend days:", days_of_week[5:])
+
+print("Unpaired days:", days_of_week[::2])
+
+print("Paired days:", days_of_week[1::2])

@@ -1,4 +1,3 @@
-# Print the sum of the first 100 numbers. Use a while-loop
 i = 0
 total = 0
 

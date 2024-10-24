@@ -1,17 +1,18 @@
-# Ask the user for a word. Loop over the word. Store all the vowels together in one list, the consonants in
-# another list. Print both lists. How do you make sure that both uppercase and lowercase letters end up in
-# the correct list?
+word = input("Enter a word:> ")
 
-word = input(str("Enter you word :"))
-consonants = []
-vowels = []
+vowels_list = []
+consonants_list = []
 
-for char in word:
-    if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u':
-        vowels.append(char)
+vowels = "aeiou"
 
-else:
-    consonants.append(char)
+for letter in word:
+    lower_letter = letter.lower()
 
-    print(f"The consonant are: {consonants}")
-    print(f"The vowel are : {vowels}")
+    if lower_letter in vowels:
+        vowels_list.append(letter)
+
+    elif lower_letter.isalpha():
+        consonants_list.append(letter)
+
+print("The vowels are:", vowels_list)
+print("The consonants are:", consonants_list)

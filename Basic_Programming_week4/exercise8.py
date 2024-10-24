@@ -1,21 +1,17 @@
-# Program the function ‘choose_random_element’ with one parameter (a list). The function chooses one
-# random element from the list and returns that element. Test the function with
-# - a list with the months
-# - a list with numbers
-# Hint: Use the documentation of the module Random: what are the different ways to look up a random
-# value out a list?
-# The chosen month is September
-# The selected number is 200.
-
-from random import choice
-
-months = ["January", "February", "March", "April", "May"]
-numbers = [1, 2, 3, 4, 5, 6]
+import random
 
 
-def choose_random_element(my_list: list[object]) -> object:
-    return choice(my_list)
+def choose_random_element(collection):
+    return random.choice(collection)
 
 
-print(choose_random_element(months))
-print(choose_random_element(numbers))
+months = ['January', 'February', 'March', 'April', 'May', 'June',
+          'July', 'August', 'September', 'October', 'November', 'December']
+
+numbers = [100, 200, 300, 400, 500]
+
+chosen_month = choose_random_element(months)
+print("The chosen month is", chosen_month)
+
+chosen_number = choose_random_element(numbers)
+print("The selected number is", chosen_number)

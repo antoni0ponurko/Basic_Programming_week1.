@@ -1,9 +1,3 @@
-# start value
-# positive step
-# amount -> use to calculate stop value
-# function print_list_numbers(start, step, amount) -> None
-# prints the numbers
-
 start_value = int(input("Enter the start value : "))
 step_value = int(input("Enter the positive step : "))
 amount = int(input("Enter the amount of number to be printed : "))

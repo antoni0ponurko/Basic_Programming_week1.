@@ -1,18 +1,13 @@
-# Program the function ‘average_of_list’ with one parameter (a list of numbers). The functions returns the
-# average of all numbers.
-# List1: [12,45,465,78,1,23,89]
-# List2: []
-# Average of list1: 101.86
-# Average of list2: -
+def sum_of_list(numbers):
+    total = 0  
+    for num in numbers:
+        total += num  
+    return total
 
-list_numbers = [5, 6, 9, 5, 6]
+numbers = [10, 20, 30, 40, 50]
 
+manual_sum = sum_of_list(numbers)
+print(f"Sum using loop: {manual_sum}")
 
-def sum_of_list(number_list[int]) -> int:
-    total = 0
-    for num in number_list:
-        total = total + num
-        return total
-
-
-print(sum_of_list(list_numbers))
+builtin_sum = sum(numbers)
+print(f"Sum using built-in function: {builtin_sum}")

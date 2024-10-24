@@ -1,16 +1,14 @@
-# a list with 4 whole numbers
-# - a list with 5 decimals
-# - a list with 3 string
-collection1 = [1, 2, 3, 4]
-collection2 = [1.2, 2.5, 4.6]
-collection3 = ["Name", "Dog", "Cat"]
+whole_numbers = [12, 45, -9, -15]
+decimal_numbers = [12.23, 45.1, 9.478, 15.125, -3.14]
+string_list = ["Joerie", "Marie", "Henk"]
 
+def get_info_list(collection_name, collection):
+    result = f"Collection {collection_name}\n"
+    
+    for index, element in enumerate(collection):
+        result += f"{element} is on position {index}\n"
+    return result
 
-def get_info_list(list_name: str, my_list: list[object]) -> str:
-    s = f"Collection {list_name}\n"
-    i = 0
-    for element in my_list:
-        s = s + f"{element} is on position {i}"
-        return s
-
-    print(get_info_list("Non-decimal numbers", collection1))
+print(get_info_list("Non-decimal numbers", whole_numbers))
+print(get_info_list("Decimal numbers", decimal_numbers))
+print(get_info_list("Strings", string_list))
